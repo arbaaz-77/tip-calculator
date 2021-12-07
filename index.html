@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+  
+  <title>Tip calculator app</title>
+</head>
+<body>
+  <main class="app flow" >
+    <img class="logo" src="images/logo.svg">
+
+    <div class="container">
+
+
+      <div class="split first">
+        <p>Bill</p>
+        
+        <div class="input">
+          <img src="images/icon-dollar.svg"><input id="bill" type="text">
+        </div>
+
+        <p>Select Tip %</p>
+        
+        <div class="percentage-buttons">
+          <button class="percentage">5%</button>
+          <button class="percentage ">10%</button>
+          <button class="percentage btn-active">15%</button>
+          <button class="percentage ">25%</button>
+          <button class="percentage ">50%</button>
+          <input id="percentage-custom" class="percentage-custom" placeholder="Custom">
+        </div>
+
+        <p>Number of People</p>
+        
+        <div class="input">
+          <img src="images/icon-person.svg"><input id="people" type="text">
+        </div>
+      
+      </div>
+
+
+
+
+      <div class="split second">
+        <p class="tip">Tip Amount <br/><span>/ person</span></p>
+
+        <p class="tip-amount result">$0.00</p>
+        
+        <p class="total">Total <br /><span>/ person</span></p>
+        
+        <p class="total-amount result">$0.00</p>
+        
+        <button class="reset">RESET</button>
+      </div>
+    
+    </div>
+  </main>
+</body>
+</html>
